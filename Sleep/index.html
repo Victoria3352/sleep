@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="laydate/theme/default/laydate.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="show">
+        <i>Do Not Stay Up</i>
+        <div class="choose">
+            <p>Time To Go Sleep</p>
+            <input type="button" value="click" class="click">
+            <div class="time">
+                <input type="text" class="layui-input" id="test4" placeholder="HH:mm:ss"><span><input type="button" value="Go" class="btn"></span>
+            </div>  
+        </div>
+            
+        </div>
+    </div>
+    <div class="show2">
+      <div class="item1">
+        <div class="title">Screen usage time</div>
+        <ul class="countdown1">
+          <li> <span class="hours hours1">00</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="seperator">:</li>
+          <li> <span class="minutes minutes1">00</span>
+            <p class="minutes_ref">minutes</p>
+          </li>
+          <li class="seperator">:</li>
+          <li> <span class="seconds seconds1">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>
+        </ul>
+       </div>
+        <div class="item2">
+          <div class="title">Count Down</div>
+        <ul class="countdown">
+            <li> <span class="hours">00</span>
+              <p class="hours_ref">hours</p>
+            </li>
+            <li class="seperator">:</li>
+            <li> <span class="minutes">00</span>
+              <p class="minutes_ref">minutes</p>
+            </li>
+            <li class="seperator">:</li>
+            <li> <span class="seconds">00</span>
+              <p class="seconds_ref">seconds</p>
+            </li>
+        </ul>
+        </div>
+        <div class="item6">
+          <p><img src="./images/s2.svg" alt=""></p>
+        </div>
+        <div class="item4">
+          <p><img src="./images/s1.svg" alt=""></p>
+          <p>One hours to sleep</p>
+        </div>
+        <div class="item5">
+          <p><img src="./images/s3.svg" alt=""></p>
+          <p>Two hours to sleep</p>
+        </div>
+        <div class="item3">
+          <a href="#" class="history">History</a>
+        </div>
+    </div>
+    <div class="box">
+      <div class="title">Sleep time record</div>
+        <input type="text" id="test5" class="text1">
+       <span class="add"><img src="./images/s4.svg" alt=""></span>
+       <div class="table">
+         <table cellspacing="0" border="1">
+          <tbody>
+            <tr>
+              <td>DAY</td>
+              <td>TIME</td>
+              <td>STATE</td>
+            </tr>
+          </tbody>
+         </table>
+     
+       </div>
+      </div>
+    </div>
+</body>
+<script src="./laydate/laydate.js"></script>
+<script>
+laydate.render({
+  elem: '#test4'
+  ,type: 'time'
+});
+laydate.render({
+  elem: '#test5'
+  ,type: 'time'
+});
+
+</script>
+
+</html>
